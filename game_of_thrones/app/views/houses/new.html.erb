@@ -1,0 +1,15 @@
+<h2>Add House</h2>
+
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :sigil %>
+  <%= f.text_field :sigil %>
+
+  <%= f.label :motto %>
+  <%= f.text_field :motto %>
+
+  <%= f.submit "Enter the War" %>
+
+<% end %>

@@ -1,0 +1,14 @@
+<%= link_to "&larr; Back".html_safe, houses_path %>
+<h1>House <%= @house.name %> <%= link_to "(edit)", edit_house_path(@house) %></h1>
+
+<h3>Members <%= link_to "(+)", new_house_character_path(@house) %></h3>
+
+<ul>
+  <% @house.characters.each do |character| %>
+    <li>
+      <h2><%= character.char_name %></h2><br>
+      <img src="<%= character.img %>"><br>
+    </li>
+    <%= link_to "(edit)", edit_house_character_path(@house, character) %>
+  <% end %>
+</ul>

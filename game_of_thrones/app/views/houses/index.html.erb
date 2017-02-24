@@ -1,0 +1,15 @@
+<header><h1>Houses of Westeros <a href="/houses/new">(+)</a></h1><heaeder>
+<main>
+
+<ul>
+<% @houses.each do |house| %>
+<li>
+  <h2 class="house-name"><%= house.name %></h2>
+  <a href="/houses/<%= house.id %>">
+    <img src='<%= house.sigil %>'>
+  </a>
+  <h4><%= house.motto %></h4>
+</li>
+<% end %>
+</ul>
+</main>

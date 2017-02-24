@@ -1,0 +1,15 @@
+<h2>Add House Member</h2>
+
+<%= form_for [@house, @character] do |f| %>
+  <%= f.label "Name" %>
+  <%= f.text_field :char_name %>
+
+  <%= f.label "Portrait" %>
+  <%= f.text_field :img %>
+
+  <%= f.label "Belongs to" %>
+  <%= f.text_field :house_id %>
+
+<%= f.submit "Enter the War" %>
+
+<% end %>

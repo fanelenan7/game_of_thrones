@@ -1,0 +1,18 @@
+<h2>Edit House</h2>
+
+<%= form_for @house do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :sigil %>
+  <%= f.text_field :sigil %>
+
+  <%= f.label :motto %>
+  <%= f.text_field :motto %>
+
+  <%= f.submit "Fight is not over"%>
+<% end %>
+
+<%= form_for @house, method: :delete do |f| %>
+  <%= f.submit "Burn them all", class: "delete" %>
+<% end %>

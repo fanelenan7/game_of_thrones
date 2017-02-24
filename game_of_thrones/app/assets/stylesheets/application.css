@@ -124,3 +124,7 @@ header {
   display: flex;
   justify-content: center;
 }
+.edit-house {
+  text-align: center;
+  margin-top: 0;
+}

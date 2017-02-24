@@ -1,4 +1,5 @@
 <h2>Edit House Member</h2>
+<div class="form">
 
 <%= form_for [@house, @character] do |f| %>
   <%= f.label "Name" %>
@@ -10,9 +11,12 @@
   <%= f.label "Belongs to" %>
   <%= f.text_field :house_id %>
 
-  <%= f.submit %>
+  <%= f.submit "Edit", :class => "submit-button"%>
 <% end %>
-
+</div>
+<br>
+<div class="form">
 <%= form_for [@house, @character], method: :delete do |f| %>
-  <%= f.submit "Kill", class: "delete" %>
+  <%= f.submit "Kill", class: "delete", :class => "submit-button" %>
 <% end %>
+</div>

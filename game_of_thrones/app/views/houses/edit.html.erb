@@ -1,4 +1,5 @@
 <h2>Edit House</h2>
+<div class="form">
 
 <%= form_for @house do |f| %>
   <%= f.label :name %>
@@ -10,9 +11,10 @@
   <%= f.label :motto %>
   <%= f.text_field :motto %>
 
-  <%= f.submit "Fight is not over"%>
+  <%= f.submit "Fight is not over", :class => "submit-button"%>
 <% end %>
 
 <%= form_for @house, method: :delete do |f| %>
-  <%= f.submit "Burn them all", class: "delete" %>
+  <%= f.submit "Burn them all", class: "delete", :class => "submit-button" %>
 <% end %>
+</div>

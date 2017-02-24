@@ -93,12 +93,12 @@ header {
 .edit-button {
   padding: 10px;
   border: 1px white solid;
-  width: 38px;
+  width: 40px;
 }
 .char-name {
   text-align: center;
   margin-bottom: 0;
-  margin-top: 0; 
+  margin-top: 0;
   border: 1px solid white;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -110,7 +110,17 @@ header {
 }
 .add-members {
   border: 1px solid white;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   width: 135px;
+  margin: 0;
+}
+.submit-button {
+  font-family: "Cinzel";
+  background-color: #fff;
+  border: 0;
+  padding: 1px 4px 1px 4px;
+}
+.form {
+  display: flex;
+  justify-content: center;
 }

@@ -1,5 +1,5 @@
 <h2>Add House Member</h2>
-
+<div class="form">
 <%= form_for [@house, @character] do |f| %>
   <%= f.label "Name" %>
   <%= f.text_field :char_name %>
@@ -10,6 +10,7 @@
   <%= f.label "Belongs to" %>
   <%= f.text_field :house_id %>
 
-<%= f.submit "Enter the War" %>
+<%= f.submit "Enter the War", :class => "submit-button" %>
 
 <% end %>
+</div>

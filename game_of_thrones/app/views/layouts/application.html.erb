@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameOfThrones</title>
+    <title>Game Of Thrones</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <h1 class="top"><%= link_to "Houses of Westeros".html_safe, houses_path %>
+</h1>
+      <h3><a href="/houses/new">Enter the War</a></h3>
+    </header>
     <%= yield %>
   </body>
 </html>

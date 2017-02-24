@@ -18,12 +18,12 @@
    font-family: "thrones";
    src: url('game_of_thrones.ttf') format("truetype");
  }
-
 body {
   background-color: #232423;
   color: #fff;
   display: flex;
-  font-family: "thrones", Georgia, serif;
+  flex-direction: column;
+  font-family: 'Cinzel', serif;
 }
 a {
   display: inline;
@@ -31,28 +31,57 @@ a {
   color: #fff;
   display: flex;
 }
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
 li {
   display: inline-block;
+  padding: 10px;
   /*display: flex;*/
 }
-.house-name {
+h1, h2 {
   text-align: center;
+  font-family: "thrones";
 }
-h2 {
-  text-align: center;
+h1 {
+  margin-top: 20px;
 }
 h4 {
   text-align: center;
   background-color: #B2B3B2;
-  padding: 10px;
   color: #222422;
+  height: 20px;
+  padding: 10px;
 }
 main {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-img {
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top{
+  margin-top: 40px;
+}
+.sigil {
+  width: 320px;
+  height: 320px;
   margin: 20px;
   display: inline;
   justify-content: center;
+}
+
+.character-portrait {
+  height: 300px;
+  width: 150px;
 }

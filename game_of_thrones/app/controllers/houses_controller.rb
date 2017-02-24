@@ -14,7 +14,6 @@ class HousesController < ApplicationController
 
   def create
     @house = House.create!(house_params)
-
     redirect_to "/houses/#{@house.id}"
   end
 

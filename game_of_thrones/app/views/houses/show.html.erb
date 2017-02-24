@@ -1,15 +1,18 @@
-<h2>House <%= @house.name %> <%= link_to "(edit)", edit_house_path(@house) %></h2>
+<div class="edit-house">
+<a href="/houses/edit"><h2>House <%= @house.name %></h2></a>
+</div>
 
-<h3>Members <%= link_to "(+)", new_house_character_path(@house) %></h3>
-
-<ul>
+<ul class="each-house">
   <% @house.characters.each do |character| %>
     <li>
-      <h3><%= character.char_name %></h3><br>
+      <h3 class="char-name"><%= character.char_name %></h3><br>
       <div class="character-portrait" style="background: url(<%= character.img %>); background-size:cover; background-position: center;"></div>
-
         <br>
+        <%= Edit</a>
+
     </li>
-    <%= link_to "edit", edit_house_character_path(@house, character) %>
   <% end %>
 </ul>
+<div class="edit-house">
+<h3><%= link_to "Add Members", new_house_character_path(@house), :class => "add-members", style: "border: 1px solid white; padding-left: 15px; padding-right: 15px; width: 135px;" %></h3>
+</div>

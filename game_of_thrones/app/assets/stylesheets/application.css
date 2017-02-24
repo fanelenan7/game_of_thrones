@@ -72,6 +72,11 @@ header {
 }
 .top{
   margin-top: 40px;
+  border: 3px white solid;
+  padding: 30px;
+}
+.top-button {
+  margin-top: 0;
 }
 .sigil {
   width: 320px;
@@ -82,6 +87,30 @@ header {
 }
 
 .character-portrait {
-  height: 300px;
-  width: 150px;
+  height: 500px;
+  width: 300px;
+}
+.edit-button {
+  padding: 10px;
+  border: 1px white solid;
+  width: 38px;
+}
+.char-name {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0; 
+  border: 1px solid white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.edit-house {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.add-members {
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 135px;
 }
